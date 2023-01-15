@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.testng.eclipse.launchconfig">
+    <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.m2e.launchconfig.classpathProvider"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.testng.remote.RemoteTestNG"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="com.lpg.qa"/>
+    <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
+    <mapAttribute key="org.testng.eclipse.ALL_CLASS_METHODS"/>
+    <listAttribute key="org.testng.eclipse.CLASS_TEST_LIST">
+        <listEntry value="com.lpg.qa.gtTestCases.UpdatedAcceptedLoadTest"/>
+        <listEntry value="com.lpg.qa.gtTestCases.AcceptedLoadTest"/>
+        <listEntry value="com.lpg.qa.GodownTransaction.DomesticDelievery"/>
+        <listEntry value="com.lpg.qaUtility.Utility"/>
+        <listEntry value="com.lpg.qa.accountsTestcases.ReceiptVoucherTest"/>
+        <listEntry value="com.lpg.qa.tvmoduletestcases.TranferVoucherTVOutTest"/>
+        <listEntry value="com.lpg.qa.GodownTransaction.CommercialDelivery"/>
+        <listEntry value="com.lpg.qa.Testcases.DirectLoginWithoutAUPTest"/>
+        <listEntry value="com.lpg.qa.accTestcases.NewLedgersTest"/>
+        <listEntry value="com.lpg.qa.GodownTransaction.XMIList"/>
+        <listEntry value="com.lpg.qa.Testcases.CommercialPartyTest"/>
+        <listEntry value="com.lpg.qa.Testcases.ProductCategoryTest"/>
+        <listEntry value="com.lpg.qa.lpgPages.Designation"/>
+        <listEntry value="com.lpg.qa.gtTestCases.UpdatedCommercialDeliveryTest"/>
+        <listEntry value="com.lpg.qa.GodownTransaction.UpdatedCommercialDelivery"/>
+        <listEntry value="com.lpg.qa.accountsTestcases.JournalVoucherTest"/>
+        <listEntry value="com.lpg.qa.tvmodule.TranferVoucherTVOut"/>
+        <listEntry value="com.lpg.qa.lpgPages.CommercialDiscountPackage"/>
+        <listEntry value="com.lpg.qa.GodownTransaction.UpdateERV"/>
+        <listEntry value="com.lpg.qa.gtTestCases.DomesticDelieveryTest"/>
+        <listEntry value="com.lpg.qa.accountsPages.DebitNoteVoucher"/>
+        <listEntry value="com.lpg.qa.accpages.AccountGroupMaster"/>
+        <listEntry value="com.lpg.qa.accountsPages.ReceiptVoucher"/>
+        <listEntry value="com.lpg.qa.tvmodule.TVOutList"/>
+        <listEntry value="com.lpg.qa.deliverycashcollection.DomesticCash"/>
+        <listEntry value="com.lpg.qa.lpgPages.Employee"/>
+        <listEntry value="com.lpg.qa.accTestcases.BankTest"/>
+        <listEntry value="com.lpg.qa.accountsTestcases.ContraVoucherTest"/>
+        <listEntry value="com.lpg.qa.GodownTransaction.PartialPurchase"/>
+        <listEntry value="com.lpg.qa.Testcases.EmployeeTest"/>
+        <listEntry value="com.lpg.qa.gtTestCases.XMIListTest"/>
+        <listEntry value="com.lpg.qa.lpgPages.DirectLoginWithoutAUP"/>
+        <listEntry value="com.lpg.qa.GodownTransaction.UpdatedAcceptedLoad"/>
+        <listEntry value="com.lpg.qa.lpgPages.ParentProductCategory"/>
+        <listEntry value="com.lpg.qa.GodownTransaction.EMR"/>
+        <listEntry value="com.lpg.qa.Testcases.ProductRateSlabTest"/>
+        <listEntry value="com.lpg.qa.Testcases.LoginTest"/>
+        <listEntry value="com.lpg.qa.gtTestCases.UpdateERVTest"/>
+        <listEntry value="com.lpg.qa.tvmodule.PartialTvOutWithoutCheckbox"/>
+        <listEntry value="com.lpg.qa.accpages.Bank"/>
+        <listEntry value="com.lpg.qa.lpgPages.Territory"/>
+        <listEntry value="com.lpg.qa.gtTestCases.ERVTest"/>
+        <listEntry value="com.lpg.qa.Testcases.ProductTest"/>
+        <listEntry value="com.lpg.qa.accountsPages.VoucherReferencing"/>
+        <listEntry value="com.lpg.qa.lpgPages.ProductRateSlab"/>
+        <listEntry value="com.lpg.qa.accpages.NewLedgers"/>
+        <listEntry value="com.lpg.qa.Testcases.DesignationTest"/>
+        <listEntry value="com.lpg.qa.lpgPages.Supplier"/>
+        <listEntry value="com.lpg.qa.accountsTestcases.VoucherDereferencingTest"/>
+        <listEntry value="com.lpg.qa.accountsTestcases.VoucherReferencingTest"/>
+        <listEntry value="com.lpg.qa.accpages.AddCompany"/>
+        <listEntry value="com.lpg.qa.gtTestCases.CommercialDeliveryTest"/>
+        <listEntry value="com.lpg.qa.accTestcases.LedgersConfigrationTest"/>
+        <listEntry value="com.lpg.qa.Testcases.ParentProductCategoryTest"/>
+        <listEntry value="com.lpg.qa.tvmoduletestcases.PartialTvOutWithoutCheckboxTest"/>
+        <listEntry value="com.lpg.qa.gtTestCases.PartialPurchaseTest"/>
+        <listEntry value="com.lpg.qa.lpgPages.Product"/>
+        <listEntry value="com.lpg.qa.accpages.LedgersConfigration"/>
+        <listEntry value="com.lpg.qa.tvmodule.PartialTVOutList"/>
+        <listEntry value="com.lpg.qa.accTestcases.AccountGroupMasterTest"/>
+        <listEntry value="com.lpg.qa.tvmoduletestcases.PartialTVOutTest"/>
+        <listEntry value="com.lpg.qa.accountsTestcases.DebitNoteVoucherTest"/>
+        <listEntry value="com.lpg.qa.lpgPages.CommercialParty"/>
+        <listEntry value="com.lpg.qa.lpgPages.ProductCategory"/>
+        <listEntry value="com.lpg.qa.GodownTransaction.ERV"/>
+        <listEntry value="com.lpg.qa.accountsPages.ContraVoucher"/>
+        <listEntry value="com.lpg.qa.Testcases.CommercialDiscountPackageTest"/>
+        <listEntry value="com.lpg.deliveycashcollectionTestcase.DomesticCashTest"/>
+        <listEntry value="com.lpg.qa.accountsPages.PaymentVoucher"/>
+        <listEntry value="com.lpg.qa.gtTestCases.EMRTest"/>
+        <listEntry value="com.lpg.qa.tvmodule.PartialTVOut"/>
+        <listEntry value="com.lpg.qa.tvmoduletestcases.TVOutListTest"/>
+        <listEntry value="com.lpg.qa.accountsPages.VoucherDereferencing"/>
+        <listEntry value="com.lpg.qa.accountsTestcases.PaymentVoucherTest"/>
+        <listEntry value="com.lpg.qa.Testcases.TerritoryTest"/>
+        <listEntry value="com.lpg.qa.accTestcases.AddCompanyTest"/>
+        <listEntry value="com.lpg.qa.lpgBase.TestBase"/>
+        <listEntry value="com.lpg.qaRough.Rough"/>
+        <listEntry value="com.lpg.qa.lpgPages.Transporter"/>
+        <listEntry value="com.lpg.qa.Testcases.SupplierTest"/>
+        <listEntry value="com.lpg.qa.GodownTransaction.AcceptedLoad"/>
+        <listEntry value="com.lpg.qa.tvmoduletestcases.PartialTVOutListTest"/>
+        <listEntry value="com.lpg.qa.accountsPages.JournalVoucher"/>
+        <listEntry value="com.lpg.qa.lpgPages.Login"/>
+        <listEntry value="com.lpg.qa.Testcases.TransporterTest"/>
+    </listAttribute>
+    <listAttribute key="org.testng.eclipse.METHOD_TEST_LIST"/>
+    <listAttribute key="org.testng.eclipse.PACKAGE_TEST_LIST"/>
+    <stringAttribute key="org.testng.eclipse.PRE_DEFINED_LISTENERS" value=""/>
+    <intAttribute key="org.testng.eclipse.TYPE" value="1"/>
+</launchConfiguration>

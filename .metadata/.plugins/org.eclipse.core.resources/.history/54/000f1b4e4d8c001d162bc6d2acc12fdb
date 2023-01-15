@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.lpg.qa.Testcases.EmployeeTest"/>
+      <class name="com.lpg.qa.Testcases.SupplierTest"/>
+      <class name="com.lpg.qa.Testcases.ParentProductCategoryTest"/>
+      <class name="com.lpg.qa.accountsTestcases.PaymentVoucherTest"/>
+      <class name="com.lpg.qa.gtTestCases.UpdatedCommercialDeliveryTest"/>
+      <class name="com.lpg.qa.tvmoduletestcases.PartialTVOutListTest"/>
+      <class name="com.lpg.qa.gtTestCases.UpdateERVTest"/>
+      <class name="com.lpg.qa.Testcases.ProductCategoryTest"/>
+      <class name="com.lpg.qa.accTestcases.AddCompanyTest"/>
+      <class name="com.lpg.qa.gtTestCases.AcceptedLoadTest"/>
+      <class name="com.lpg.qa.Testcases.ProductTest"/>
+      <class name="com.lpg.qa.accountsTestcases.JournalVoucherTest"/>
+      <class name="com.lpg.qa.Testcases.TransporterTest"/>
+      <class name="com.lpg.qa.Testcases.TerritoryTest"/>
+      <class name="com.lpg.qa.Testcases.DirectLoginWithoutAUPTest"/>
+      <class name="com.lpg.qa.Testcases.DesignationTest"/>
+      <class name="com.lpg.qa.gtTestCases.ERVTest"/>
+      <class name="com.lpg.qa.tvmoduletestcases.TranferVoucherTVOutTest"/>
+      <class name="com.lpg.qa.gtTestCases.UpdatedAcceptedLoadTest"/>
+      <class name="com.lpg.qa.tvmoduletestcases.PartialTvOutWithoutCheckboxTest"/>
+      <class name="com.lpg.qa.accTestcases.LedgersConfigrationTest"/>
+      <class name="com.lpg.qa.gtTestCases.CommercialDeliveryTest"/>
+      <class name="com.lpg.qa.accountsTestcases.ContraVoucherTest"/>
+      <class name="com.lpg.qa.gtTestCases.PartialPurchaseTest"/>
+      <class name="com.lpg.qa.gtTestCases.XMIListTest"/>
+      <class name="com.lpg.qa.Testcases.CommercialPartyTest"/>
+      <class name="com.lpg.qa.gtTestCases.DomesticDelieveryTest"/>
+      <class name="com.lpg.qa.accountsTestcases.DebitNoteVoucherTest"/>
+      <class name="com.lpg.qa.accountsTestcases.VoucherReferencingTest"/>
+      <class name="com.lpg.qa.accTestcases.BankTest"/>
+      <class name="com.lpg.qa.accountsTestcases.VoucherDereferencingTest"/>
+      <class name="com.lpg.qa.Testcases.ProductRateSlabTest"/>
+      <class name="com.lpg.qa.Testcases.LoginTest"/>
+      <class name="com.lpg.qa.gtTestCases.EMRTest"/>
+      <class name="com.lpg.qa.tvmoduletestcases.PartialTVOutTest"/>
+      <class name="com.lpg.qa.accountsTestcases.ReceiptVoucherTest"/>
+      <class name="com.lpg.qa.accTestcases.AccountGroupMasterTest"/>
+      <class name="com.lpg.qa.tvmoduletestcases.TVOutListTest"/>
+      <class name="com.lpg.qa.Testcases.CommercialDiscountPackageTest"/>
+      <class name="com.lpg.deliveycashcollectionTestcase.DomesticCashTest"/>
+      <class name="com.lpg.qa.accTestcases.NewLedgersTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
