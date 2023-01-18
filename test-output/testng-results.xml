@@ -8,34 +8,40 @@
       <![CDATA[verifyMyerpUserid]]>
     </line>
     <line>
-      <![CDATA[ verifyMyerpPassword]]>
+      <![CDATA[verifyMyerpPassword]]>
     </line>
     <line>
-      <![CDATA[ verifyMyerplogin]]>
+      <![CDATA[verifyMyerplogin]]>
     </line>
     <line>
-      <![CDATA[ verifyMyerpgerneralreport]]>
+      <![CDATA[verifyMyerpaccountreport]]>
     </line>
     <line>
-      <![CDATA[ verifyMyerpsaleregister]]>
+      <![CDATA[verifyMyerpaccountingreport]]>
     </line>
     <line>
-      <![CDATA[ verifyMyerpselectdate]]>
+      <![CDATA[verifyMyerppagenav]]>
+    </line>
+    <line>
+      <![CDATA[verifyMyerptrailcreditorsreport]]>
+    </line>
+    <line>
+      <![CDATA[verifyMyerpfromdate]]>
     </line>
     <line>
       <![CDATA[ verifyMyerpgetdatabtn]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-01-13T15:43:46 IST" name="Default suite" finished-at="2023-01-13T15:44:13 IST" duration-ms="26599">
+  <suite started-at="2023-01-18T13:46:28 IST" name="Default suite" finished-at="2023-01-18T13:46:52 IST" duration-ms="24443">
     <groups>
     </groups>
-    <test started-at="2023-01-13T15:43:46 IST" name="Default test" finished-at="2023-01-13T15:44:13 IST" duration-ms="26599">
-      <class name="com.lpg.qa.CounterSalesTestCases.SaleRegisterTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.lpg.qa.CounterSalesTestCases.SaleRegisterTest@1ed6388a]" started-at="2023-01-13T15:43:46 IST" name="setup" finished-at="2023-01-13T15:43:55 IST" duration-ms="8942" status="PASS">
+    <test started-at="2023-01-18T13:46:28 IST" name="Default test" finished-at="2023-01-18T13:46:52 IST" duration-ms="24443">
+      <class name="com.lpg.qa.accountsTestcases.TrialBalanceCreditorsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.lpg.qa.accountsTestcases.TrialBalanceCreditorsTest@1ed6388a]" started-at="2023-01-18T13:46:28 IST" name="setup" finished-at="2023-01-18T13:46:38 IST" duration-ms="9747" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="SaleRegisterPageTest()[pri:0, instance:com.lpg.qa.CounterSalesTestCases.SaleRegisterTest@1ed6388a]" started-at="2023-01-13T15:43:55 IST" name="SaleRegisterPageTest" finished-at="2023-01-13T15:44:13 IST" duration-ms="17547" status="PASS">
+        <test-method signature="TrialBalanceCreditorsPageTest()[pri:0, instance:com.lpg.qa.accountsTestcases.TrialBalanceCreditorsTest@1ed6388a]" started-at="2023-01-18T13:46:38 IST" name="TrialBalanceCreditorsPageTest" finished-at="2023-01-18T13:46:52 IST" duration-ms="14550" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[verifyMyerpagancycode]]>
@@ -44,41 +50,47 @@
               <![CDATA[verifyMyerpUserid]]>
             </line>
             <line>
-              <![CDATA[ verifyMyerpPassword]]>
+              <![CDATA[verifyMyerpPassword]]>
             </line>
             <line>
-              <![CDATA[ verifyMyerplogin]]>
+              <![CDATA[verifyMyerplogin]]>
             </line>
             <line>
-              <![CDATA[ verifyMyerpgerneralreport]]>
+              <![CDATA[verifyMyerpaccountreport]]>
             </line>
             <line>
-              <![CDATA[ verifyMyerpsaleregister]]>
+              <![CDATA[verifyMyerpaccountingreport]]>
             </line>
             <line>
-              <![CDATA[ verifyMyerpselectdate]]>
+              <![CDATA[verifyMyerppagenav]]>
+            </line>
+            <line>
+              <![CDATA[verifyMyerptrailcreditorsreport]]>
+            </line>
+            <line>
+              <![CDATA[verifyMyerpfromdate]]>
             </line>
             <line>
               <![CDATA[ verifyMyerpgetdatabtn]]>
             </line>
           </reporter-output>
-        </test-method> <!-- SaleRegisterPageTest -->
-        <test-method is-config="true" signature="screenshotCapture(org.testng.ITestResult)[pri:0, instance:com.lpg.qa.CounterSalesTestCases.SaleRegisterTest@1ed6388a]" started-at="2023-01-13T15:44:13 IST" name="screenshotCapture" finished-at="2023-01-13T15:44:13 IST" duration-ms="9" status="PASS">
+        </test-method> <!-- TrialBalanceCreditorsPageTest -->
+        <test-method is-config="true" signature="screenshotCapture(org.testng.ITestResult)[pri:0, instance:com.lpg.qa.accountsTestcases.TrialBalanceCreditorsTest@1ed6388a]" started-at="2023-01-18T13:46:52 IST" name="screenshotCapture" finished-at="2023-01-18T13:46:52 IST" duration-ms="12" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=SaleRegisterPageTest status=SUCCESS method=SaleRegisterTest.SaleRegisterPageTest()[pri:0, instance:com.lpg.qa.CounterSalesTestCases.SaleRegisterTest@1ed6388a] output=verifyMyerpagancycode]]]>
+                <![CDATA[[TestResult name=TrialBalanceCreditorsPageTest status=SUCCESS method=TrialBalanceCreditorsTest.TrialBalanceCreditorsPageTest()[pri:0, instance:com.lpg.qa.accountsTestcases.TrialBalanceCreditorsTest@1ed6388a] output=verifyMyerpagancycode]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotCapture -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.lpg.qa.CounterSalesTestCases.SaleRegisterTest@1ed6388a]" started-at="2023-01-13T15:44:13 IST" name="teardown" finished-at="2023-01-13T15:44:13 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.lpg.qa.accountsTestcases.TrialBalanceCreditorsTest@1ed6388a]" started-at="2023-01-18T13:46:52 IST" name="teardown" finished-at="2023-01-18T13:46:52 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.lpg.qa.CounterSalesTestCases.SaleRegisterTest -->
+      </class> <!-- com.lpg.qa.accountsTestcases.TrialBalanceCreditorsTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.lpg.qa.CounterSalesTestCases.SaleRegisterTest">
+      <class name="com.lpg.qa.accountsTestcases.TrialBalanceStraightReportTest">
         <methods>
           <include name="setup"/>
-          <include name="screenshotCapture"/>
           <include name="teardown"/>
-          <include name="SaleRegisterPageTest"/>
+          <include name="TrialBalanceStraightReportPageTest"/>
+          <include name="screenshotCapture"/>
         </methods>
-      </class> <!-- com.lpg.qa.CounterSalesTestCases.SaleRegisterTest -->
+      </class> <!-- com.lpg.qa.accountsTestcases.TrialBalanceStraightReportTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
