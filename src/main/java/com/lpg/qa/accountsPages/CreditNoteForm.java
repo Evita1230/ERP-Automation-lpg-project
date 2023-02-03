@@ -1,5 +1,6 @@
 package com.lpg.qa.accountsPages;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -26,6 +27,7 @@ public class CreditNoteForm {
 		@FindBy(xpath="//button[@id='btnclear']")private WebElement newbtn;
 		
 		//initialization
+		private WebDriver driver;
 		public CreditNoteForm(WebDriver driver) {
 			PageFactory.initElements(driver,this);
 			}
@@ -66,7 +68,7 @@ public class CreditNoteForm {
 		public void verifyMyerpVoucherno() {
 			Assert.assertTrue(voucherno.isEnabled(),"voucherno is enable");
 			Reporter.log("verifyMyerpvoucherno",true);
-			voucherno.sendKeys("8012");
+			voucherno.sendKeys("80142");
 		}
 		public void verifyMyerpCreditledger() {
 			Assert.assertTrue(creditledger.isEnabled(),"Creditledger is enable");
@@ -101,7 +103,21 @@ public class CreditNoteForm {
 		public void verifyMyerpSubmitbtn() {
 			Assert.assertTrue(submitbtn.isEnabled(),"Submitbtn is enable");
 			Reporter.log("verifyMyerpsubmitbtn",true);
-			submitbtn.click();
+		
+		}
+		public void VerifyandClickonMyerpAlertbtn() throws InterruptedException { 
+			 submitbtn.click();
+			 Thread.sleep(1000);
+			 Alert alert1 = driver.switchTo().alert();
+			 String alertMagssage1 = driver.switchTo().alert().getText();
+			 System.out.print(alertMagssage1);
+			 Thread.sleep(1000);	
+			 alert1.accept();
+	   } 
+		public void verifyMyerpNewbtn() {
+			Assert.assertTrue(newbtn.isEnabled(),"newbtn is enable");
+			Reporter.log("verifyMyerpnewbtn",true);
+			newbtn.click();
 		}
 
 }

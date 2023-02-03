@@ -51,5 +51,6 @@ import com.lpg.qa.lpgBase.TestBase;
 				dbv.VerifyandClickonMyerpUpdateDebitNoteVoucherForm();
 				dbv.VerifyandClickonMyerpDBVUpdateDocNumber();
 				dbv.VerifyandClickonMyerpUpdateGetDataBtn();
+				dbv.VerifyandClickonMyerpAlertpopup();
 				 }
 		}

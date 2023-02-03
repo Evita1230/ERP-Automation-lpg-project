@@ -1,96 +1,166 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[verifyMyerpagancycode]]>
     </line>
-    <line>
-      <![CDATA[verifyMyerpUserid]]>
-    </line>
-    <line>
-      <![CDATA[verifyMyerpPassword]]>
-    </line>
-    <line>
-      <![CDATA[verifyMyerplogin]]>
-    </line>
-    <line>
-      <![CDATA[verifyMyerpaccountreport]]>
-    </line>
-    <line>
-      <![CDATA[verifyMyerpaccountingreport]]>
-    </line>
-    <line>
-      <![CDATA[verifyMyerppagenav]]>
-    </line>
-    <line>
-      <![CDATA[verifyMyerptrailcreditorsreport]]>
-    </line>
-    <line>
-      <![CDATA[verifyMyerpfromdate]]>
-    </line>
-    <line>
-      <![CDATA[ verifyMyerpgetdatabtn]]>
-    </line>
   </reporter-output>
-  <suite started-at="2023-01-18T13:46:28 IST" name="Default suite" finished-at="2023-01-18T13:46:52 IST" duration-ms="24443">
+  <suite started-at="2023-02-02T17:23:19 IST" name="Default suite" finished-at="2023-02-02T17:23:44 IST" duration-ms="25199">
     <groups>
     </groups>
-    <test started-at="2023-01-18T13:46:28 IST" name="Default test" finished-at="2023-01-18T13:46:52 IST" duration-ms="24443">
-      <class name="com.lpg.qa.accountsTestcases.TrialBalanceCreditorsTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.lpg.qa.accountsTestcases.TrialBalanceCreditorsTest@1ed6388a]" started-at="2023-01-18T13:46:28 IST" name="setup" finished-at="2023-01-18T13:46:38 IST" duration-ms="9747" status="PASS">
+    <test started-at="2023-02-02T17:23:19 IST" name="Default test" finished-at="2023-02-02T17:23:44 IST" duration-ms="25199">
+      <class name="com.lpg.qa.gtTestCases.DailyStatementReportTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.lpg.qa.gtTestCases.DailyStatementReportTest@576d5deb]" started-at="2023-02-02T17:23:19 IST" name="setup" finished-at="2023-02-02T17:23:33 IST" duration-ms="14260" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TrialBalanceCreditorsPageTest()[pri:0, instance:com.lpg.qa.accountsTestcases.TrialBalanceCreditorsTest@1ed6388a]" started-at="2023-01-18T13:46:38 IST" name="TrialBalanceCreditorsPageTest" finished-at="2023-01-18T13:46:52 IST" duration-ms="14550" status="PASS">
+        <test-method signature="DailyStatementReportPagetest()[pri:0, instance:com.lpg.qa.gtTestCases.DailyStatementReportTest@576d5deb]" started-at="2023-02-02T17:23:33 IST" name="DailyStatementReportPagetest" finished-at="2023-02-02T17:23:44 IST" duration-ms="10746" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate an element using xpath=//input[@id='txtAgencyCode']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BFPKR04', ip: '192.168.39.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//input[@id='txtAgencyCode']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BFPKR04', ip: '192.168.39.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
+at com.lpg.qa.GodownTransaction.DailyStatementReport.verifyMyerpagancycode(DailyStatementReport.java:37)
+at com.lpg.qa.gtTestCases.DailyStatementReportTest.DailyStatementReportPagetest(DailyStatementReportTest.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
               <![CDATA[verifyMyerpagancycode]]>
             </line>
-            <line>
-              <![CDATA[verifyMyerpUserid]]>
-            </line>
-            <line>
-              <![CDATA[verifyMyerpPassword]]>
-            </line>
-            <line>
-              <![CDATA[verifyMyerplogin]]>
-            </line>
-            <line>
-              <![CDATA[verifyMyerpaccountreport]]>
-            </line>
-            <line>
-              <![CDATA[verifyMyerpaccountingreport]]>
-            </line>
-            <line>
-              <![CDATA[verifyMyerppagenav]]>
-            </line>
-            <line>
-              <![CDATA[verifyMyerptrailcreditorsreport]]>
-            </line>
-            <line>
-              <![CDATA[verifyMyerpfromdate]]>
-            </line>
-            <line>
-              <![CDATA[ verifyMyerpgetdatabtn]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- TrialBalanceCreditorsPageTest -->
-        <test-method is-config="true" signature="screenshotCapture(org.testng.ITestResult)[pri:0, instance:com.lpg.qa.accountsTestcases.TrialBalanceCreditorsTest@1ed6388a]" started-at="2023-01-18T13:46:52 IST" name="screenshotCapture" finished-at="2023-01-18T13:46:52 IST" duration-ms="12" status="PASS">
+        </test-method> <!-- DailyStatementReportPagetest -->
+        <test-method is-config="true" signature="screenshotCapture(org.testng.ITestResult)[pri:0, instance:com.lpg.qa.gtTestCases.DailyStatementReportTest@576d5deb]" started-at="2023-02-02T17:23:44 IST" name="screenshotCapture" finished-at="2023-02-02T17:23:44 IST" duration-ms="49" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TrialBalanceCreditorsPageTest status=SUCCESS method=TrialBalanceCreditorsTest.TrialBalanceCreditorsPageTest()[pri:0, instance:com.lpg.qa.accountsTestcases.TrialBalanceCreditorsTest@1ed6388a] output=verifyMyerpagancycode]]]>
+                <![CDATA[[TestResult name=DailyStatementReportPagetest status=FAILURE method=DailyStatementReportTest.DailyStatementReportPagetest()[pri:0, instance:com.lpg.qa.gtTestCases.DailyStatementReportTest@576d5deb] output=verifyMyerpagancycode]]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=109.0.5414.120)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BFPKR04', ip: '192.168.39.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\YOGESH\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64484}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 05001a088bdac60fe38e78ab0ca061bc]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=109.0.5414.120)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BFPKR04', ip: '192.168.39.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\YOGESH\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64484}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 05001a088bdac60fe38e78ab0ca061bc
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+at com.lpg.qa.Base.LpgTestBase.screenshotCapture(LpgTestBase.java:61)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotCapture -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.lpg.qa.accountsTestcases.TrialBalanceCreditorsTest@1ed6388a]" started-at="2023-01-18T13:46:52 IST" name="teardown" finished-at="2023-01-18T13:46:52 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.lpg.qa.gtTestCases.DailyStatementReportTest@576d5deb]" started-at="2023-02-02T17:23:44 IST" name="teardown" finished-at="2023-02-02T17:23:44 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.lpg.qa.accountsTestcases.TrialBalanceCreditorsTest -->
+      </class> <!-- com.lpg.qa.gtTestCases.DailyStatementReportTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

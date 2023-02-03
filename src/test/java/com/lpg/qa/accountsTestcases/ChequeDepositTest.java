@@ -24,9 +24,9 @@ public class ChequeDepositTest extends LpgTestBase{
 	
 	@AfterClass
 	public void teardown() {
-//		TestBase.driver.close();
+	//LpgTestBase.driver.close();
 	}
-	
+ 	
 	@Test
 	public void ChequeDeposittest() throws InterruptedException{
 		ChequeDepositForm cd= new ChequeDepositForm(LpgTestBase.driver);
@@ -36,6 +36,10 @@ public class ChequeDepositTest extends LpgTestBase{
 		cd.verifyMyerploginbtn();
 		cd.verifyMyerpAccounts();
 		cd.verifyMyerpChequedeposit();
+		cd.VerifyMyerpPVSelectBank();
+		cd.VerifyMyerpSelectdate();
+		cd.VerifyandClickonMyerpClearingRadioBtn();
+		cd.VerifyandClickonMyerpTransferRadioBtn();
 		
 	}
 }

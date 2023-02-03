@@ -1,5 +1,6 @@
 package com.lpg.qa.accountsPages;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -31,7 +32,7 @@ public class DebitNoteVoucher  {
 			
 			
 			// initialization
-		
+		    private WebDriver driver;
 			
 			public DebitNoteVoucher(WebDriver driver) {
 				PageFactory.initElements(driver, this);
@@ -161,8 +162,20 @@ public class DebitNoteVoucher  {
 				public void VerifyandClickonMyerpUpdateGetDataBtn () { 
 					 Assert.assertTrue(udbvgetdatabtn.isEnabled(),"udbvgetdatabtn is enabled");
 					 Reporter.log("udbvgetdatabtn", true);
-					 udbvgetdatabtn.click();
+					 
 
                } 
+            public void VerifyandClickonMyerpAlertpopup() throws InterruptedException { 
+					
+            	     udbvgetdatabtn.click();
+					 Thread.sleep(1000);
+					 Alert alert1 = driver.switchTo().alert();
+					 String alertMagssage1 = driver.switchTo().alert().getText();
+					 System.out.print(alertMagssage1);
+					 Thread.sleep(1000);	
+					 alert1.accept();
+					
+			
+				}
 				
 }

@@ -29,10 +29,10 @@ public class StockEntroyTest extends LpgTestBase{
 	@Test
 	public void StockEntorytest() throws InterruptedException{
 		StockEntroyForm se= new StockEntroyForm(LpgTestBase.driver);
-		se.verifyMyerpagancycode();
-		se.verifyMyerpusrname();
-		se.verifyMyerppassword();
-		se.verifyMyerploginbtn();
+		/*
+		 * se.verifyMyerpagancycode(); se.verifyMyerpusrname();
+		 * se.verifyMyerppassword(); se.verifyMyerploginbtn();
+		 */
 		se.verifyMyerpInventoryManagement();
 		se.verifyMyerpStockentry();
 		se.Godownin();

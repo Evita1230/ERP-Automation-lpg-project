@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.apache.maven.surefire.shared.utils.io.FileUtils;
@@ -18,15 +19,21 @@ public class TestBase {
 		 
 		public void intializeBrowser(String browser) {
 			if(browser.equalsIgnoreCase("chrome")) {
-	     System.setProperty("webdriver.chrome.driver", "C:\\Users\\YOGESH\\Downloads\\chromedriver_win32 (5)\\chromedriver.exe\\");
-				 driver=new ChromeDriver();
+	     System.setProperty("webdriver.chrome.driver", "C:\\Users\\YOGESH\\Desktop\\Selenium all jar file\\chromedriver.exe");
+	     
+	     ChromeOptions options=new ChromeOptions();
+	     options.addArguments("--disable notifications-");
+	     driver=new ChromeDriver(options);
+				 
 			System.out.println("Chrome driver sucessfully open");
 			}
+			
 			driver.get("http://myerp.mygasagency.com/");
 			driver.manage().deleteAllCookies();
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		
+			
+		    
 		}
 		@AfterMethod
 		public void screenshotCapture(ITestResult result) throws IOException {

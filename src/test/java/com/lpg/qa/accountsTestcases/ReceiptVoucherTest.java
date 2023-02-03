@@ -4,13 +4,14 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import com.lpg.qa.Base.LpgTestBase;
 import com.lpg.qa.accountsPages.ReceiptVoucher;
-import com.lpg.qa.lpgBase.TestBase;
 
 
- public class ReceiptVoucherTest  extends TestBase{
+ public class ReceiptVoucherTest  extends LpgTestBase{
 
-			WebDriver driver;
+	     WebDriver driver;
 		   
 			@BeforeClass
 			public void setup() {
@@ -18,13 +19,14 @@ import com.lpg.qa.lpgBase.TestBase;
 			}
 			
 			@AfterClass
-			public void teardown() {
-			//	TestBase.driver.close();
-			}	
+			 public void teardown() { 
+				//TestBase.driver.close(); 
+			}
 			
+			 
 			@Test
 			public void ReceiptVoucherPageTest() throws InterruptedException {
-				ReceiptVoucher arv=new  ReceiptVoucher(TestBase.driver); 
+				ReceiptVoucher arv=new  ReceiptVoucher(LpgTestBase.driver); 
 				
 				arv.verifyMyerpagancycode();
 				arv.verifyMyerpUserid();
@@ -51,12 +53,13 @@ import com.lpg.qa.lpgBase.TestBase;
 				arv.VerifyandClickonMyerpRVAmountTextbox();
 				arv.VerifyandClickonMyerpRVSelectDebitCredit();
 				arv.VerifyandClickonMyerpRVSavebtn();
+				arv.VerifyandClickonMyerpRVAlertpopup();
 				arv.VerifyandClickonMyerpRVAddHeaderbtn();
-				arv.VerifyandClickonMyerpRVNarration2();
 				arv.VerifyandClickonMyerpRVLedger();
 				arv.VerifyandClickonMyerpRVAmountTextbox();
 				arv.VerifyandClickonMyerpRVSelectDebitCredit1();
 				arv.VerifyandClickonMyerpRVSavebtn();
+				arv.VerifyandClickonMyerpAccountsModule();
 				
 				
 			

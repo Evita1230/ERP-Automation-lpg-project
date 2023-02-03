@@ -42,7 +42,16 @@ public class CreditNoteTest extends LpgTestBase{
 		cn.verifyMyerpAmount();
 		cn.verifyMyerpNarration();
 		cn.verifyMyerpNarration1();
+		cn.verifyMyerpNewbtn();
+		cn.verifyMyerpCreditledger();
+		cn.verifyMyerpCreditamount();
+		cn.verifyMyerpAccount();
+		cn.verifyMyerpAmount();
+		cn.verifyMyerpNarration();
+		cn.verifyMyerpNarration1();
 		cn.verifyMyerpSubmitbtn();
+		cn.VerifyandClickonMyerpAlertbtn();
+		
 		
 	}
 }

@@ -18,9 +18,15 @@ public class BillGenerationForm {
 	@FindBy(xpath="//a[text()=' Bill Generation']")private WebElement billgeneration;
 	@FindBy(xpath="//select[@id='ddlBillingType']")private WebElement billingtype;
 	@FindBy(xpath="//input[@id='BillingDate']")private WebElement billingdate;
+	@FindBy(xpath="//input[@id='txtInvoiceNo']")private WebElement invoicenum;
 	@FindBy(xpath="//button[@id='btnSubmit']")private WebElement submitbtn;
+	@FindBy(xpath="//button[@id='btnclear']")private WebElement clearbtn;
+	
+	
+	
 	
 	//initialization
+	
 		public BillGenerationForm(WebDriver driver) {
 			PageFactory.initElements(driver,this);
 			}
@@ -58,6 +64,7 @@ public class BillGenerationForm {
 			Reporter.log("verifyMyerpbillgeneration",true);
 			billgeneration.click();
 		}
+		
 		public void Billingtype() throws InterruptedException {
 			Select bt = new Select(billingtype);
 			Thread.sleep(1000);
@@ -65,14 +72,33 @@ public class BillGenerationForm {
 			Assert.assertFalse(billingtype.isSelected());
 			bt.selectByVisibleText("Daily");
 		}
-		public void verifyMyerpBillingdate() {
+		public void verifyMyerpBillingdate() throws InterruptedException {
+			Thread.sleep(500);
 			Assert.assertTrue(billingdate.isEnabled(),"Billingdate is enable");
 			Reporter.log("verifyMyerpbillingdate",true);
-			billingdate.sendKeys("16/12/2022");
+
+			billingdate.sendKeys("24/12/2022");
 		}
-		public void verifyMyerpSubmitbtn() {
+		public void verifyMyerpinvoicenumber() {
+			Assert.assertTrue(invoicenum.isEnabled(),"invoicenum is enable");
+			Reporter.log("verifyMyerpinvoicenum",true);
+			invoicenum.click();
+			invoicenum.sendKeys("34006");
+		}
+		public void verifyMyerpSubmitbtn() throws InterruptedException {  
+		   Thread.sleep(500);
 			Assert.assertTrue(submitbtn.isEnabled(),"Submitbtn is enable");
 			Reporter.log("verifyMyerpsubmitbtn",true);
-			submitbtn.click();
+		  submitbtn.click();
+		  Thread.sleep(2000);
 		}
+	
+		public void verifyMyerpclearbtn() {
+			Assert.assertTrue(clearbtn.isEnabled(),"clearbtn is enable");
+			Reporter.log("verifyMyerpclearbtn",true);
+			clearbtn.click();
+		
+		}
+		
 }
+

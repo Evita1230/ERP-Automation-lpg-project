@@ -1,5 +1,6 @@
 package com.lpg.qa.accountsPages;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,6 +11,7 @@ import org.testng.Reporter;
 
 
 public class ReceiptVoucher {
+		
 			@FindBy (xpath="//input[@id='txtAgencyCode']") private WebElement agancycode ;
 			@FindBy (xpath="//input[@id='txtEmail']") private WebElement userid;
 			@FindBy (xpath="//input[@id='password-field']") private WebElement password;
@@ -31,9 +33,8 @@ public class ReceiptVoucher {
 			
 			
 			// initialization
-		
-			
-			public ReceiptVoucher(WebDriver driver) {
+		private WebDriver driver;
+			 public ReceiptVoucher(WebDriver driver) {
 				PageFactory.initElements(driver, this);
 			}
 
@@ -82,7 +83,7 @@ public class ReceiptVoucher {
 					 Assert.assertTrue(rvvnumber.isEnabled(),"rvvnumber is enabled");
 					 Reporter.log("Verifymyerppvvnumber", true);
 					 rvvnumber.click();
-					 rvvnumber.sendKeys("90063");
+					 rvvnumber.sendKeys("475");
 
                 } 
 				public void VerifyandClickonMyerpRVTransactionDate () { 
@@ -90,7 +91,7 @@ public class ReceiptVoucher {
 					 Reporter.log("VerifyMyerprvtransactiondate", true);
 					 rvtransactiondate.clear();
 					 rvtransactiondate.click();
-					 rvtransactiondate.sendKeys("16/12/2022");
+					 rvtransactiondate.sendKeys("19/1/2023");
 
                 } 
 				
@@ -99,13 +100,14 @@ public class ReceiptVoucher {
 					Select alss = new Select(rvselectbankorcash);
 			        Assert.assertFalse(rvselectbankorcash.isDisplayed(),"pvselectbankorcash is displayed");
 					Assert.assertFalse(rvselectbankorcash.isSelected());
+					Thread.sleep(800);
 					alss.selectByVisibleText("MAYA BANK");
 				}
 				public void VerifyandClickonMyerpRVChequeNumber () { 
 					 Assert.assertTrue(rvchequeno.isEnabled(),"rvchequeno is enabled");
 					 Reporter.log("Verifymyerprvchequeno", true);
 					 rvchequeno.click();
-					 rvchequeno.sendKeys("4055hg7");
+					 rvchequeno.sendKeys("56605");
 
                } 
 				public void VerifyandClickonMyerpRVChequeDate () { 
@@ -113,7 +115,7 @@ public class ReceiptVoucher {
 					 Reporter.log("Verifymyerppvchequedate", true);
 					 rvchequedate.clear();
 					 rvchequedate.click();
-					 rvchequedate.sendKeys("16/12/2022");
+					 rvchequedate.sendKeys("19/1/2022");
 
                } 
 				public void VerifyandClickonMyerpRVNarration1 () { 
@@ -150,10 +152,23 @@ public class ReceiptVoucher {
 				public void VerifyandClickonMyerpRVSavebtn() throws InterruptedException { 
 					 Assert.assertTrue(rvsavebtn.isEnabled(),"rvsavebtn is enabled");
 					 Reporter.log("Verifymyerprvsavebtn", true);
-					 rvsavebtn.click();
 					
-			  } 
+					 
+					}
+				public void VerifyandClickonMyerpRVAlertpopup() throws InterruptedException { 
+					
+					rvsavebtn.click();
+					 Thread.sleep(1000);
+					 Alert alert1 = driver.switchTo().alert();
+					 String alertMagssage1 = driver.switchTo().alert().getText();
+					 System.out.print(alertMagssage1);
+					 Thread.sleep(1000);	
+					 alert1.accept();
+					
 			
+				}
+				
+					
 				public void VerifyandClickonMyerpRVAddHeaderbtn() throws InterruptedException { 
 					Thread.sleep(1000);
 					

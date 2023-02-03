@@ -4,11 +4,13 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import com.lpg.qa.Base.LpgTestBase;
 import com.lpg.qa.accountsPages.VoucherReferencing;
-import com.lpg.qa.lpgBase.TestBase;
 
 
- public class VoucherReferencingTest  extends TestBase{
+
+ public class VoucherReferencingTest  extends LpgTestBase{
 
 			WebDriver driver;
 		   
@@ -24,7 +26,7 @@ import com.lpg.qa.lpgBase.TestBase;
 			
 			@Test
 			public void VoucherReferencingPageTest() throws InterruptedException {
-				VoucherReferencing vr=new  VoucherReferencing(TestBase.driver); 
+				VoucherReferencing vr=new  VoucherReferencing(LpgTestBase.driver); 
 				
 				vr.verifyMyerpagancycode();
 				vr.verifyMyerpUserid();

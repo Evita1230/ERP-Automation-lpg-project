@@ -1,5 +1,6 @@
 package com.lpg.qa.accountsPages;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -31,7 +32,7 @@ public class ContraVoucher {
 			
 			// initialization
 		
-			
+			private WebDriver driver;
 			public ContraVoucher(WebDriver driver) {
 				PageFactory.initElements(driver, this);
 			}
@@ -80,7 +81,7 @@ public class ContraVoucher {
 					 Assert.assertTrue(cvvnumber.isEnabled(),"rvvnumber is enabled");
 					 Reporter.log("Verifymyerppvvnumber", true);
 					 cvvnumber.click();
-					 cvvnumber.sendKeys("90063");
+					 cvvnumber.sendKeys("2729820");
 
                 } 
 				public void VerifyandClickonMyerpCVTransactionDate () { 
@@ -95,7 +96,7 @@ public class ContraVoucher {
 					 Assert.assertTrue(cvchequeno.isEnabled(),"rvchequeno is enabled");
 					 Reporter.log("Verifymyerprvchequeno", true);
 					 cvchequeno.click();
-					 cvchequeno.sendKeys("4055hg7");
+					 cvchequeno.sendKeys("57hg887");
 
               } 
 				public void VerifyandClickonMyerpCVChequeDate () { 
@@ -119,14 +120,14 @@ public class ContraVoucher {
 					Select alss = new Select(cvselectdrownfrom);
 			        Assert.assertFalse(cvselectdrownfrom.isDisplayed(),"pvselectbankorcash is displayed");
 					Assert.assertFalse(cvselectdrownfrom.isSelected());
-					alss.selectByVisibleText("IDBI BANK");
+					alss.selectByVisibleText("MAYA BANK");
 				}
 				public void VerifyMyerpCVSelectDepositeIn()  throws InterruptedException {
 					Thread.sleep(800);
 					Select alss = new Select(cvselectdepositin);
 			        Assert.assertFalse(cvselectdepositin.isDisplayed(),"cvselectdepositin is displayed");
 					Assert.assertFalse(cvselectdepositin.isSelected());
-					alss.selectByVisibleText("MAYA BANK");
+					alss.selectByVisibleText("IDBI BANK");
 				}
 				
 				 
@@ -140,10 +141,20 @@ public class ContraVoucher {
 				public void VerifyandClickonMyerpCVSavebtn() throws InterruptedException { 
 					 Assert.assertTrue(cvsavebtn.isEnabled(),"rvsavebtn is enabled");
 					 Reporter.log("Verifymyerprvsavebtn", true);
-					 cvsavebtn.click();
+					
 					
 			  } 
+           public void VerifyandClickonMyerpCVAlertpopup() throws InterruptedException { 
+					cvsavebtn.click();
+					 Thread.sleep(1000);
+					 Alert alert1 = driver.switchTo().alert();
+					 String alertMagssage1 = driver.switchTo().alert().getText();
+					 System.out.print(alertMagssage1);
+					 Thread.sleep(1000);	
+					 alert1.accept();
+					
 			
+				}
 			public void VerifyandClickonMyerpCVNewbtn() { 
 					 Assert.assertTrue(cvnewbtn.isEnabled(),"pvnewbtn is enabled");
 					 Reporter.log("Verifymyerppvnewbtn", true);

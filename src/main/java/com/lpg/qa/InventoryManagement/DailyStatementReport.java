@@ -70,7 +70,7 @@ public class DailyStatementReport {
 							 Reporter.log("verifyMyerpselectdate", true);
 							 selectdate.click(); 
 							 selectdate.clear();
-							 selectdate.sendKeys("16/01/2023");
+							 selectdate.sendKeys("2/02/2023");
 						}
 
 						public void verifyMyerpSelectGodown() throws InterruptedException {

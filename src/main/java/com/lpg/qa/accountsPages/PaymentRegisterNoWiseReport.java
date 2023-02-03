@@ -89,7 +89,7 @@ public class PaymentRegisterNoWiseReport{
 					 Reporter.log("verifyMyerpfromdocno", true);
 					 fromdocno.click(); 
 					 fromdocno.clear();
-					 fromdocno.sendKeys("2200016");
+					 fromdocno.sendKeys("2200044");
 				}
 
 				public void VerifyMyerpToDocNo() {
@@ -97,7 +97,7 @@ public class PaymentRegisterNoWiseReport{
 					 Reporter.log("verifyMyerptodocno", true);
 					 todocno.click(); 
 					 todocno.clear();
-					 todocno.sendKeys("2200016");
+					 todocno.sendKeys("2200044");
 					
 				}
 				

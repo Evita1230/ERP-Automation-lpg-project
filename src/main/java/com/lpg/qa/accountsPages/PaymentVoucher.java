@@ -5,9 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
 
@@ -85,7 +83,7 @@ public class PaymentVoucher {
 					 Assert.assertTrue(pvvnumber.isEnabled(),"pvvnumber is enabled");
 					 Reporter.log("Verifymyerppvvnumber", true);
 					 pvvnumber.click();
-					 pvvnumber.sendKeys("6087923");
+					 pvvnumber.sendKeys("190810");
 
                 } 
 				public void VerifyandClickonMyerpPVTransactionDate () { 
@@ -93,7 +91,7 @@ public class PaymentVoucher {
 					 Reporter.log("VerifyMyerppvtransactiondate", true);
 					 pvtransactiondate.clear();
 					 pvtransactiondate.click();
-					 pvtransactiondate.sendKeys("6/01/2023");
+					 pvtransactiondate.sendKeys("19/01/2023");
 
                 } 
 				
@@ -109,7 +107,7 @@ public class PaymentVoucher {
 					 Assert.assertTrue(pvchequeno.isEnabled(),"pvchequeno is enabled");
 					 Reporter.log("Verifymyerppvchequeno", true);
 					 pvchequeno.click();
-					 pvchequeno.sendKeys("575536");
+					 pvchequeno.sendKeys("1080710");
 
                } 
 				public void VerifyandClickonMyerpPVChequeDate () throws InterruptedException { 
@@ -119,7 +117,7 @@ public class PaymentVoucher {
 					 Reporter.log("Verifymyerppvchequedate", true);
 					 pvchequedate.clear();
 					 pvchequedate.click();
-					 pvchequedate.sendKeys("6/01/2023");
+					 pvchequedate.sendKeys("19/01/2023");
 
                } 
 				public void VerifyandClickonMyerpPVNarration1 () { 
@@ -157,7 +155,13 @@ public class PaymentVoucher {
 				public void VerifyandClickonMyerpPVSavebtn() throws InterruptedException { 
 					 Assert.assertTrue(pvsavebtn.isEnabled(),"pvsavebtn is enabled");
 					 Reporter.log("Verifymyerppvsavebtn", true);
-					 pvsavebtn.click();	
+					 pvsavebtn.click();
+					 Thread.sleep(1000);
+					 Alert alert1 = driver.switchTo().alert();
+					 String alertMagssage1 = driver.switchTo().alert().getText();
+					 System.out.print(alertMagssage1);
+					 Thread.sleep(1000);	
+					 alert1.accept();
 			   } 
 			
 				public void VerifyandClickonMyerpPVAddHeaderbtn() { 
@@ -194,13 +198,9 @@ public class PaymentVoucher {
 					 Assert.assertTrue(pvsavebtn.isEnabled(),"pvsavebtn is enabled");
 					 Reporter.log("Verifymyerppvsavebtn", true);
 					 pvsavebtn.click();	
-					 
-					 
-					 WebDriverWait wait = new WebDriverWait(driver, 3000);
-					 wait.until(ExpectedConditions.alertIsPresent());
-					 Alert alert = driver.switchTo().alert();
-					 alert.accept();
-			   } 
+					 Thread.sleep(200);
+			 
+				}
 			
 				public void VerifyandClickonMyerpPVNewbtn() { 
 					 Assert.assertTrue(pvnewbtn.isEnabled(),"pvnewbtn is enabled");

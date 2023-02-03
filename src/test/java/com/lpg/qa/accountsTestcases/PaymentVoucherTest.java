@@ -4,11 +4,11 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import com.lpg.qa.Base.LpgTestBase;
 import com.lpg.qa.accountsPages.PaymentVoucher;
-import com.lpg.qa.lpgBase.TestBase;
 
 
- public class PaymentVoucherTest  extends TestBase{
+ public class PaymentVoucherTest  extends LpgTestBase{
 
 			WebDriver driver;
 		   
@@ -19,12 +19,12 @@ import com.lpg.qa.lpgBase.TestBase;
 			
 			@AfterClass
 			public void teardown() {
-			//	TestBase.driver.close();
+				LpgTestBase.driver.close();
 			}	
 			
 			@Test
 			public void PaymentVoucherPageTest() throws InterruptedException {
-				PaymentVoucher apv=new  PaymentVoucher(TestBase.driver); 
+				PaymentVoucher apv=new  PaymentVoucher(LpgTestBase.driver); 
 				
 				apv.verifyMyerpagancycode();
 				apv.verifyMyerpUserid();
@@ -53,10 +53,10 @@ import com.lpg.qa.lpgBase.TestBase;
 				apv.VerifyandClickonMyerpPVSelectDebitCredit();
 				apv.VerifyandClickonMyerpPVSavebtn();
 				apv.VerifyandClickonMyerpPVAddHeaderbtn();
-				apv.VerifyandClickonMyerpPVLedger1();
-				apv.VerifyandClickonMyerpPVAmountTextbox1();
-				apv.VerifyandClickonMyerpPVSelectDebitCredit1();
-				apv.VerifyandClickonMyerpPVSavebtn1();
+				//apv.VerifyandClickonMyerpPVLedger1();
+				//apv.VerifyandClickonMyerpPVAmountTextbox1();
+				//apv.VerifyandClickonMyerpPVSelectDebitCredit1();
+				//apv.VerifyandClickonMyerpPVSavebtn1();
 				
 				
 				

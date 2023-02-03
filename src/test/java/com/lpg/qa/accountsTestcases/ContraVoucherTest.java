@@ -50,6 +50,7 @@ import com.lpg.qa.lpgBase.TestBase;
 				acv.VerifyMyerpCVSelectDrownFrom();
 				acv.VerifyandClickonMyerpRVNarration1();
 				acv.VerifyandClickonMyerpCVSavebtn();
+				acv.VerifyandClickonMyerpCVAlertpopup();
 				
 				 }
 		}

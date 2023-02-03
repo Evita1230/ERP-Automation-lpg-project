@@ -1,9 +1,11 @@
 package com.lpg.qa.accountsPages;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.Reporter;
 
@@ -15,8 +17,14 @@ public class ChequeDepositForm {
 	@FindBy(xpath="//button[@id='btnLogin']")private WebElement login;
 	@FindBy(xpath="//span[text()='Accounts']")private WebElement accounts;
 	@FindBy(xpath="//a[text()=' Cheque Deposit']")private WebElement chequedeposit;
+	@FindBy (xpath="//select[@id='ddlBank']") private WebElement selectbank;
+	@FindBy(xpath="//input[@id='Transdate']")private WebElement selectdate;  
+	@FindBy(xpath="//input[@id='txtPara1']")private WebElement clearingradiobtn;
+	@FindBy(xpath="//input[@id='txtPara2']")private WebElement transferradiobtn;
+	@FindBy(xpath="//button[@id='btnSubmit']")private WebElement submitbtn;
 	
 	//initialization
+	 private WebDriver driver;
 			public ChequeDepositForm(WebDriver driver) {
 				PageFactory.initElements(driver,this);
 				}
@@ -49,10 +57,52 @@ public class ChequeDepositForm {
 				Reporter.log("verifyMyerpaccounts",true);
 				accounts.click();
 			}
-			public void verifyMyerpChequedeposit() {
+			public void verifyMyerpChequedeposit() throws InterruptedException {
+				Thread.sleep(800);
 				Assert.assertTrue(chequedeposit.isEnabled(),"Chequedeposit is enable");
 				Reporter.log("verifyMyerpchequedeposit",true);
 				chequedeposit.click();
 			}
+			public void VerifyMyerpPVSelectBank()  throws InterruptedException {
+				Thread.sleep(800);
+				Select alss = new Select(selectbank);
+		        Assert.assertTrue(selectbank.isDisplayed(),"selectbank is displayed");
+				Assert.assertFalse(selectbank.isSelected());
+				alss.selectByVisibleText("MAYA BANK");
+			}
+			public void VerifyMyerpSelectdate() throws InterruptedException {
+				Thread.sleep(800);
+				 Assert.assertTrue(selectdate.isEnabled(),"selectdate field is enabled");		 
+				 Reporter.log("verifyMyerpselectdate", true);
+				 selectdate.click(); 
+				 selectdate.sendKeys("17/01/2023");
+				
+			}
+			
+			public void VerifyandClickonMyerpClearingRadioBtn() throws InterruptedException {
+				Thread.sleep(800);
+				 Assert.assertTrue(clearingradiobtn.isEnabled(),"clearingradiobtn is enabled");
+				 Reporter.log(" verifyMyerpclearingradiobtn", true);
+				 clearingradiobtn.click();
+			
+			}
+			public void VerifyandClickonMyerpTransferRadioBtn() throws InterruptedException {
+				Thread.sleep(800);
+				 Assert.assertTrue(transferradiobtn.isEnabled(),"transferradiobtn is enabled");
+				 Reporter.log(" verifyMyerptransferradiobtn", true);
+				 transferradiobtn.click();
+				 submitbtn.click();
+				 Thread.sleep(1000);	
+				Alert al=driver.switchTo().alert();
+				 Thread.sleep(1000);
+				 al.accept();
+				 
+				
+			}
 
 }
+				
+		
+			
+
+

@@ -1,6 +1,7 @@
 
 package com.lpg.qa.accountsPages;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -32,7 +33,7 @@ public class JournalVoucher {
 
 			// initialization
 		
-			
+			private WebDriver driver;
 			public JournalVoucher(WebDriver driver) {
 				PageFactory.initElements(driver, this);
 			}
@@ -44,7 +45,7 @@ public class JournalVoucher {
 					 Reporter.log(" verifyMyerplogin",true);
 					login.click();
 				}
-				
+				                       
 				public void verifyMyerpagancycode() {
 					 Assert.assertTrue(agancycode.isEnabled(),"agancycode field is enabled");
 					 Reporter.log("verifyMyerpagancycode", true);
@@ -121,9 +122,21 @@ public class JournalVoucher {
 				public void VerifyandClickonMyerpJVSavebtn() throws InterruptedException { 
 					 Assert.assertTrue(jvsavebtn.isEnabled(),"jvsavebtn is enabled");
 					 Reporter.log("Verifymyerpjvsavebtn", true);
-					 jvsavebtn.click();
+					 
 					
 			  }
+                public void VerifyandClickonMyerpJVAlertpopup() throws InterruptedException { 
+					
+					jvsavebtn.click();
+					 Thread.sleep(1000);
+					 Alert alert1 = driver.switchTo().alert();
+					 String alertMagssage1 = driver.switchTo().alert().getText();
+					 System.out.print(alertMagssage1);
+					 Thread.sleep(1000);	
+					 alert1.accept();
+					
+			
+				}
 				
 				public void VerifyandClickonMyerpJVNewbtn() { 
 					 Assert.assertTrue(jvnewbtn.isEnabled(),"jvnewbtn is enabled");

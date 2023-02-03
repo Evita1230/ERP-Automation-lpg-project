@@ -37,7 +37,13 @@ public class BillGenerationTest extends LpgTestBase{
 		bg.verifyMyerpBillgeneration();
 		bg.Billingtype();
 		bg.verifyMyerpBillingdate();
+		bg.verifyMyerpinvoicenumber();
+		//bg.verifyMyerpclearbtn(); //not working
+		//bg.Billingtype();
+		//bg.verifyMyerpBillingdate();
+		//bg.verifyMyerpinvoicenumber();
 		bg.verifyMyerpSubmitbtn();
+		
 
 	}
 }

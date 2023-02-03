@@ -37,12 +37,13 @@ import com.lpg.qa.lpgBase.TestBase;
 				jv.VerifyandClickonMyerpJVLedger();
 				jv.VerifyandClickonMyerpJVAmount();
 				jv.VerifyandClickonMyerpJVSelectDebitCredit();
-			//	jv.VerifyandClickonMyerpJVNewbtn();
+				//jv.VerifyandClickonMyerpJVNewbtn();
 				jv.VerifyandClickonMyerpJVSavebtn();
-				jv.VerifyandClickonMyerpJVAddHeaderbtn();
-				jv.VerifyandClickonMyerpJVLedger();
-				jv.VerifyandClickonMyerpJVAmount();
-				jv.VerifyandClickonMyerpJVSavebtn();
+				jv.VerifyandClickonMyerpJVAlertpopup();
+				//jv.VerifyandClickonMyerpJVAddHeaderbtn();
+				//jv.VerifyandClickonMyerpJVLedger();
+				//jv.VerifyandClickonMyerpJVAmount();
+			//	jv.VerifyandClickonMyerpJVSavebtn();
 				
 				
 				 }
