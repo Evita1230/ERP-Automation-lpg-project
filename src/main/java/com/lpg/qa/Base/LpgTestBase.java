@@ -20,7 +20,7 @@ public class LpgTestBase {
 	
       public static  WebDriver driver;
 			 
-			public void intializeBrowser(String browser) {
+			public WebDriver intializeBrowser(String browser) {
 				if(browser.equalsIgnoreCase("chrome")) {
 		     System.setProperty("webdriver.chrome.driver", "C:\\Users\\YOGESH\\Desktop\\Selenium all jar file\\chromedriver.exe");
 					 driver=new ChromeDriver();
@@ -34,6 +34,7 @@ public class LpgTestBase {
 				driver.findElement(By.xpath("//input[@id='txtEmail']")).sendKeys("admin");
 				driver.findElement(By.xpath("//input[@id='password-field']")).sendKeys("admin@123");
 				driver.findElement(By.xpath("//button[@id='btnLogin']")).click();
+				return driver;
 				
 			}
 		

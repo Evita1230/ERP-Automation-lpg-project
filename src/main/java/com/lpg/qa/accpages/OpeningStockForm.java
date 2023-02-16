@@ -34,6 +34,11 @@ public class OpeningStockForm {
 	@FindBy(xpath="//input[@id='txtotherprodOpeningQty']")private WebElement openingqty;
 	
 	//initialization
+	WebDriver driver;
+	 public void setup(WebDriver driver) 
+	 {
+		 this.driver=driver;
+	 }
 			public OpeningStockForm(WebDriver driver) {
 				PageFactory.initElements(driver,this);
 				}

@@ -4,27 +4,48 @@
     <line>
       <![CDATA[verifyMyerpagancycode]]>
     </line>
+    <line>
+      <![CDATA[verifyMyerpUserid]]>
+    </line>
+    <line>
+      <![CDATA[ verifyMyerpPassword]]>
+    </line>
+    <line>
+      <![CDATA[ verifyMyerplogin]]>
+    </line>
+    <line>
+      <![CDATA[ verifyMyerpdccmodule]]>
+    </line>
+    <line>
+      <![CDATA[ verifyMyerpdomesticcashform]]>
+    </line>
+    <line>
+      <![CDATA[ verifyMyerpdcccalender]]>
+    </line>
+    <line>
+      <![CDATA[ verifyMyerpdccgetdatabn]]>
+    </line>
   </reporter-output>
-  <suite started-at="2023-02-02T17:23:19 IST" name="Default suite" finished-at="2023-02-02T17:23:44 IST" duration-ms="25199">
+  <suite started-at="2023-02-15T18:29:52 IST" name="Default suite" finished-at="2023-02-15T18:30:19 IST" duration-ms="27067">
     <groups>
     </groups>
-    <test started-at="2023-02-02T17:23:19 IST" name="Default test" finished-at="2023-02-02T17:23:44 IST" duration-ms="25199">
-      <class name="com.lpg.qa.gtTestCases.DailyStatementReportTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.lpg.qa.gtTestCases.DailyStatementReportTest@576d5deb]" started-at="2023-02-02T17:23:19 IST" name="setup" finished-at="2023-02-02T17:23:33 IST" duration-ms="14260" status="PASS">
+    <test started-at="2023-02-15T18:29:52 IST" name="Default test" finished-at="2023-02-15T18:30:19 IST" duration-ms="27067">
+      <class name="com.lpg.deliveycashcollectionTestcase.DomesticCashTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.lpg.deliveycashcollectionTestcase.DomesticCashTest@534a5a98]" started-at="2023-02-15T18:29:52 IST" name="setup" finished-at="2023-02-15T18:30:05 IST" duration-ms="13191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="DailyStatementReportPagetest()[pri:0, instance:com.lpg.qa.gtTestCases.DailyStatementReportTest@576d5deb]" started-at="2023-02-02T17:23:33 IST" name="DailyStatementReportPagetest" finished-at="2023-02-02T17:23:44 IST" duration-ms="10746" status="FAIL">
+        <test-method signature="DomesticCashPageTest()[pri:0, instance:com.lpg.deliveycashcollectionTestcase.DomesticCashTest@534a5a98]" started-at="2023-02-15T18:30:05 IST" name="DomesticCashPageTest" finished-at="2023-02-15T18:30:19 IST" duration-ms="13718" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Cannot locate an element using xpath=//input[@id='txtAgencyCode']
+              <![CDATA[Cannot locate an element using xpath=//input[@id='btnEdit']
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-BFPKR04', ip: '192.168.39.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: driver.version: RemoteWebDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//input[@id='txtAgencyCode']
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//input[@id='btnEdit']
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-BFPKR04', ip: '192.168.39.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
@@ -35,9 +56,9 @@ at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
-at com.lpg.qa.GodownTransaction.DailyStatementReport.verifyMyerpagancycode(DailyStatementReport.java:37)
-at com.lpg.qa.gtTestCases.DailyStatementReportTest.DailyStatementReportPagetest(DailyStatementReportTest.java:30)
+at jdk.proxy2/jdk.proxy2.$Proxy12.isEnabled(Unknown Source)
+at com.lpg.qa.deliverycashcollection.DomesticCash.VerifyandClickonMyerpDCSelectBtn(DomesticCash.java:88)
+at com.lpg.deliveycashcollectionTestcase.DomesticCashTest.DomesticCashPageTest(DomesticCashTest.java:38)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -73,13 +94,34 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <line>
               <![CDATA[verifyMyerpagancycode]]>
             </line>
+            <line>
+              <![CDATA[verifyMyerpUserid]]>
+            </line>
+            <line>
+              <![CDATA[ verifyMyerpPassword]]>
+            </line>
+            <line>
+              <![CDATA[ verifyMyerplogin]]>
+            </line>
+            <line>
+              <![CDATA[ verifyMyerpdccmodule]]>
+            </line>
+            <line>
+              <![CDATA[ verifyMyerpdomesticcashform]]>
+            </line>
+            <line>
+              <![CDATA[ verifyMyerpdcccalender]]>
+            </line>
+            <line>
+              <![CDATA[ verifyMyerpdccgetdatabn]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- DailyStatementReportPagetest -->
-        <test-method is-config="true" signature="screenshotCapture(org.testng.ITestResult)[pri:0, instance:com.lpg.qa.gtTestCases.DailyStatementReportTest@576d5deb]" started-at="2023-02-02T17:23:44 IST" name="screenshotCapture" finished-at="2023-02-02T17:23:44 IST" duration-ms="49" status="FAIL">
+        </test-method> <!-- DomesticCashPageTest -->
+        <test-method is-config="true" signature="screenshotCapture(org.testng.ITestResult)[pri:0, instance:com.lpg.deliveycashcollectionTestcase.DomesticCashTest@534a5a98]" started-at="2023-02-15T18:30:19 IST" name="screenshotCapture" finished-at="2023-02-15T18:30:19 IST" duration-ms="51" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=DailyStatementReportPagetest status=FAILURE method=DailyStatementReportTest.DailyStatementReportPagetest()[pri:0, instance:com.lpg.qa.gtTestCases.DailyStatementReportTest@576d5deb] output=verifyMyerpagancycode]]]>
+                <![CDATA[[TestResult name=DomesticCashPageTest status=FAILURE method=DomesticCashTest.DomesticCashPageTest()[pri:0, instance:com.lpg.deliveycashcollectionTestcase.DomesticCashTest@534a5a98] output=verifyMyerpagancycode]]]>
               </value>
             </param>
           </params>
@@ -87,22 +129,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <message>
               <![CDATA[no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=109.0.5414.120)
+  (Session info: chrome=110.0.5481.100)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-BFPKR04', ip: '192.168.39.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\YOGESH\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64484}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 05001a088bdac60fe38e78ab0ca061bc]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.100, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\YOGESH\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50399}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5e9c7c76b459acef8bb16b6b4a4a5df5]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=109.0.5414.120)
+  (Session info: chrome=110.0.5481.100)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-BFPKR04', ip: '192.168.39.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\YOGESH\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64484}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 05001a088bdac60fe38e78ab0ca061bc
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.100, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\YOGESH\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50399}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5e9c7c76b459acef8bb16b6b4a4a5df5
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -116,7 +158,7 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
 at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-at com.lpg.qa.Base.LpgTestBase.screenshotCapture(LpgTestBase.java:61)
+at com.lpg.qa.lpgBase.TestBase.screenshotCapture(TestBase.java:43)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -156,11 +198,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotCapture -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.lpg.qa.gtTestCases.DailyStatementReportTest@576d5deb]" started-at="2023-02-02T17:23:44 IST" name="teardown" finished-at="2023-02-02T17:23:44 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.lpg.deliveycashcollectionTestcase.DomesticCashTest@534a5a98]" started-at="2023-02-15T18:30:19 IST" name="teardown" finished-at="2023-02-15T18:30:19 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.lpg.qa.gtTestCases.DailyStatementReportTest -->
+      </class> <!-- com.lpg.deliveycashcollectionTestcase.DomesticCashTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

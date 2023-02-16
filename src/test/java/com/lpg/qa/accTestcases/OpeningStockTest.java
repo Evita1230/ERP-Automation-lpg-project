@@ -17,7 +17,7 @@ public class OpeningStockTest extends LpgTestBase{
 	
 	@BeforeClass
 	public void setup() {
-		intializeBrowser("chrome");
+		driver=intializeBrowser("chrome");
 	}
 	
 	@AfterClass
@@ -28,10 +28,11 @@ public class OpeningStockTest extends LpgTestBase{
 	@Test
 	public void OpeningStocktest() throws InterruptedException{
 		OpeningStockForm os=new OpeningStockForm(LpgTestBase.driver);
-		os.verifyMyerpagancycode();
-		os.verifyMyerpusrname();
-		os.verifyMyerppassword();
-		os.verifyMyerploginbtn();
+		//os.verifyMyerpagancycode();
+		/*
+		 * os.verifyMyerpusrname(); os.verifyMyerppassword(); os.verifyMyerploginbtn();
+		 */
+		os.setup(driver);
 		os.verifyMyerpMaster();
 		os.verifyMyerpAccountMaster();
 		os.verifyMyerpOpeningStock();
